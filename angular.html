@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>List of candies using AngularJS</title>
+    </head>
+   
+    <body>
+        <h1>Sample</h1>
+               
+        <div ng-app = "" ng-init = "candies = [{Brand:'en-US',name:'United States'}, {Brand:'en-GB',name:'United Kingdom'}, {Brand:'en-FR',name:'France'}]"> 
+            <p>Enter your Name:<input type="text" ng-model="name"></p>
+            <p>Hello,Welcome <span ng-bind="name"></span>!</p>
+            <p>List of the most delicios candies available </p>
+            <ol>
+                <li ng-repeat="candies around brands">
+                        {{ 'Brand: ' + candies.brand + ', Name: ' + candies.Name }}
+                </li>
+            </ol>
+        </div>
+        <script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.6.10/angular.min.js"></script>
+    
+    </body>
+</html>
+
+
